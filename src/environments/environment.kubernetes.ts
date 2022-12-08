@@ -10,10 +10,10 @@ export let environment = {
   name: "kubernetes",
   production: false,
   version: env.npm_package_version,
-  serverUrl: "",
+  serverUrl: "http://ops-bk.sandbox.cribbi.io",
   oauth: {
     enabled: "true", // For connecting to Mifos X using OAuth2 Authentication change the value to true
-    serverUrl: "https://paymenthub.qa.oneacrefund.org/opsapp",
+    serverUrl: "http://ops-bk.sandbox.cribbi.io",
     basicAuth: "true",
     basicAuthToken: 'Y2xpZW50Og=='
   },
@@ -22,6 +22,6 @@ export let environment = {
   externalConfigurationFile: "configuration.properties", // When provided, the external configuration file content will override this environment settings based on naming conventions
   auth: {
     enabled: false,
-    tenant: "default"
+    tenant: "phdefault"
   }
 };
